@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a5ad8674-0ac3-4b2f-b610-11a704eb27dd</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\TS.SharedKernel\SH.InfrastructureEfCore\SH.InfrastructureEfCore.csproj" />
+    <ProjectReference Include="..\Factor.InfrastructureEfCore\Factor.InfrastructureEfCore.csproj" />
+  </ItemGroup>
+
+</Project>

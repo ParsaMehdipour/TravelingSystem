@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\TS.SharedKernel\SH.InfrastructureEfCore\SH.InfrastructureEfCore.csproj" />
+    <ProjectReference Include="..\Factor.Application\Factor.Application.csproj" />
+    <ProjectReference Include="..\Factor.Domain\Factor.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

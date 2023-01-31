@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>aaab0d30-b49f-4ab1-ac16-b5c0e508e6a3</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TS.Driver\Driver.InfrastructureEfCore\Driver.InfrastructureEfCore.csproj" />
+		<ProjectReference Include="..\TS.Factor\Factor.InfrastructureEfCore\Factor.InfrastructureEfCore.csproj" />
+		<ProjectReference Include="..\TS.Journey\Journey.InfrastructureEfCore\Journey.InfrastructureEfCore.csproj" />
+		<ProjectReference Include="..\TS.SharedKernel\SH.InfrastructureEfCore\SH.InfrastructureEfCore.csproj" />
+		<ProjectReference Include="..\TS.Traveler\Traveler.infrastructureEfCore\Traveler.infrastructureEfCore.csproj" />
+	</ItemGroup>
+
+</Project>
