@@ -31,7 +31,7 @@ public class CreateJourneyCommandHandler : IRequestHandler<CreateJourneyCommand,
         //Request to create factor
         _httpClientService.SetBaseAddress("https://localhost:7267/");
 
-        CreateFactorRequestDto requestPost = new(journey.Id, request.TravelerId, request.DriverId, request.Start, request.Destination);
+        CreateFactorRequestDto requestPost = new(journey.Id, request.TravelerId, request.DriverId, request.Start, request.Destination, 5);
 
         var createFactorResponse = await _httpClientService.Post<CreateFactorRequestDto, CreateFactorResponseDto>(requestPost, "api/Factors/Create/", cancellationToken);
 
