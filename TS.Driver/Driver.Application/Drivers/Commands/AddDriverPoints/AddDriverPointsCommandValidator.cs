@@ -8,6 +8,6 @@ public class AddDriverPointsCommandValidator : AbstractValidator<AddDriverPoints
     {
         RuleFor(_ => _.Id).NotEmpty().WithMessage("آی دی خالی می باشد");
 
-        RuleFor(_ => _.Point).NotEmpty().WithMessage("امتیاز دی خالی می باشد");
+        RuleFor(_ => _.Point).NotEmpty().WithMessage("امتیاز خالی می باشد");
     }
 }
